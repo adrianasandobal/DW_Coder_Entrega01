@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Montserrat:wght@100;300;500;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-size: 16px;
+    color: black;
+}
+
+html { background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%); }
+
+h1 { font-family: 'Borel', cursive; font-size: 40px; font-weight: 300; }
+h2 { font-size: 50px; font-weight: 300; color: #de528c; text-transform: uppercase; }
+h3 { font-family: 'Borel', cursive; font-size: 28px; font-weight: 300; }
+
+button, .boton_input {
+    border: none;
+    background-color: #de528c;
+    color: white;
+    width: 30%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.centrar_vertical {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.margin_tp_20 { margin: 20px 0; }
+.margin_tp_40 { margin: 40px 0; }
+
+.muyFacil, .liso { background-color: #4eb3de; color: white; }
+.facil, .estampado, .taller { background-color: #8de0a6; }
+.neutro, .metalizado { background-color: #fcf09f; }
+.dificil, .degradado { background-color: #f27c7c; color: white; }
+.muyDificil, .curso { background-color: #de528c; color: white; }
+
+
+
+
+/***********/
+/* header */
+.header {
+    height: 15vh;
+    font-size: 0;
+    position: relative;
+}
+
+.header #logo {
+    display: inline-block;
+    width: 30vw;
+    height: 100%;
+    padding-left: 40px;
+}
+
+.header #logo img {
+    display: inline-block;
+    width: 150px;
+}
+
+.header #logo h1 {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.header .nav {
+    display: inline-block;
+    text-align: right;
+    width: 70vw;
+    padding-right: 40px;
+}
+
+.header .nav ul li {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.header .nav #ustedEstaAqui {
+    font-weight: 800;
+}
+/***********/
+
+
+
+
+/*********/
+/* main */
+.main {
+    width: 100vw;
+    height: 75vh;
+    font-size: 0;
+}
+
+.main .columna_izquierda {
+    display: inline-block;
+    width: 10vw;
+    vertical-align: top;
+    text-align: center;
+}
+
+.columna_izquierda .flecha {
+    display: block;
+    width: 100%;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+}
+
+.columna_izquierda .flecha img {
+    width: 25px;
+}
+
+.columna_izquierda .lista_categoria img {
+    width: 50px;
+    height: auto;
+}
+
+.main .columna_derecha {
+    display: inline-block;
+    width: 90vw;
+    vertical-align: top;
+    padding: 0 40px;
+    background-color: white;
+}
+
+.main .columna_derecha .filtro h4,
+.main .columna_derecha .filtro .lista_nivel,
+.main .columna_derecha .filtro .lista_nivel ul li {
+    display: inline-block;
+}
+
+.main .columna_derecha .filtro h4 {
+    margin-right: 20px;
+}
+
+.main .columna_derecha .filtro .lista_nivel ul li {
+    border: solid 1px;
+    padding: 5px 10px;
+    margin: 0 20px;
+}
+
+.main .columna_derecha .filtro .lista_nivel ul li a {
+    text-decoration: none;
+}
+
+.main .columna_derecha .figuras .fila_figuras {
+    font-size: 0;
+}
+
+.main .columna_derecha .figuras .fila_figuras .figura {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 25%;
+    border: solid 1px;
+}
+
+.main .columna_derecha .figuras .fila_figuras .figura .nivel {
+    display: inline;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    transform: translate(-2%, -2%);
+    font-size: 12px;
+    font-weight: 800;
+    text-align: left;
+}
+
+.main .columna_derecha .figuras .fila_figuras .figura .nombre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: black;
+    color: white;
+    font-size: 24px;
+    font-weight: 800;
+    vertical-align: center;
+}
+
+.main .columna_derecha .figuras .fila_figuras .figura img {
+    width: 75%;
+    height: auto;
+}
+
+.main .columna_derecha .boton {
+    text-align: center;
+    margin-bottom: 20px;
+}
+/*********/
+
+
+
+
+/**/
+/* secciones */
+.main_secciones {
+    display: inline-block;
+    width: 100vw;
+    font-size: 0;
+}
+
+.vista_vh {
+    height: 75vh;
+}
+
+.main_secciones .columna_izquierda,
+.main_secciones .columna_derecha {
+    display: inline-block;
+    width: 10vw;
+    background-color: #8de0a6;
+}
+
+.main_secciones .columna_centro {
+    display: inline-block;
+    width: 80vw;
+}
+
+.main_secciones .columna_centro h2 {
+    color: white;
+}
+
+.main_secciones .columna_centro h3 {
+    border-bottom: solid 1px;
+}
+
+.main_secciones .columna_centro button {
+    margin-bottom: 50px;
+}
+
+.main_secciones .columna_centro .cursos .fila_secciones,
+.main_secciones .columna_centro .tutoriales .fila_secciones,
+.main_secciones .columna_centro .papeles .fila_secciones {
+    font-size: 0;
+    padding-bottom: 20px;
+}
+
+.main_secciones .columna_centro .cursos .fila_secciones {
+    border-bottom: solid 1px;
+}
+
+.main_secciones .columna_centro .papeles .fila_secciones {
+    border-bottom: solid 1px;
+    padding: 40px 0;
+}
+
+.main_secciones .columna_centro .cursos .fila_secciones .ficha,
+.main_secciones .columna_centro .tutoriales .fila_secciones .ficha,
+.main_secciones .columna_centro .papeles .fila_secciones .ficha {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    padding-right: 20px;
+}
+
+.main_secciones .columna_centro .cursos .fila_secciones .ficha,
+.main_secciones .columna_centro .papeles .fila_secciones .ficha {
+    width: 20%;
+}
+
+.main_secciones .columna_centro .tutoriales .fila_secciones .ficha {
+    width: 25%;
+}
+
+.main_secciones .columna_centro .cursos .fila_secciones .ficha .curso,
+.main_secciones .columna_centro .cursos .fila_secciones .ficha .taller {
+    display: inline;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    transform: translate(-2%, -2%);
+    font-size: 12px;
+    font-weight: 800;
+    text-align: left;
+}
+
+.main_secciones .columna_centro .tutoriales .fila_secciones .ficha .nivel {
+    display: inline;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    transform: translate(-2%, -2%);
+    font-size: 12px;
+    font-weight: 800;
+    text-align: left;
+}
+
+.main_secciones .columna_centro .cursos .fila_secciones .ficha img,
+.main_secciones .columna_centro .papeles .fila_secciones .ficha img {
+    width: 60%;
+    height: auto;
+}
+
+.main_secciones .columna_centro .tutoriales .fila_secciones .ficha iframe {
+    width: 100%;
+    height: auto;
+}
+
+.main_secciones .columna_centro .cursos .fila_secciones .ficha h5 {
+    margin: 10px 0;
+}
+
+.main_secciones .columna_centro .cursos .fila_secciones .ficha .temas {
+    margin-top: 10px;
+}
+
+.main_secciones .columna_centro .filtro h4,
+.main_secciones .columna_centro .filtro .lista_papel,
+.main_secciones .columna_centro .filtro .lista_papel ul li {
+    display: inline-block;
+}
+
+.main_secciones .columna_centro .filtro h4 {
+    margin-right: 20px;
+}
+
+.main_secciones .columna_centro .filtro .lista_papel ul li {
+    border: solid 1px;
+    padding: 5px 10px;
+    margin: 0 20px;
+}
+
+.main_secciones .columna_centro .filtro .lista_papel ul li a {
+    text-decoration: none;
+}
+
+.main_secciones .columna_centro .papeles .fila_secciones .ficha .papel {
+    display: inline;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    transform: translate(-2%, -2%);
+    font-size: 12px;
+    font-weight: 800;
+    text-align: left;
+}
+
+.main_secciones .columna_centro .papeles .fila_secciones .ficha .precio {
+    display: inline;
+    font-size:large;
+    background: white;
+}
+
+.main_secciones .columna_centro .papeles .fila_secciones .ficha .direccion {
+    margin-top: 20px;
+}
+
+.main_secciones .columna_centro .contacto {
+    font-size: 0;
+}
+
+.main_secciones .columna_centro .contacto iframe,
+.main_secciones .columna_centro .contacto .form {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+}
+
+.main_secciones .columna_centro .contacto .form {
+    padding-right: 40px;
+}
+
+.main_secciones .columna_centro .contacto .form form {
+    display: block;
+}
+
+.main_secciones .columna_centro .contacto .form form div {
+    margin-bottom: 20px;
+}
+
+.main_secciones .columna_centro .contacto .form label {
+    vertical-align: top;
+    display: block;
+    margin-right: 10px;
+}
+
+.main_secciones .columna_centro .contacto .form input {
+    padding: 5px;
+}
+
+
+
+
+/***********/
+/* footer */
+.footer {
+    height: 10vh;
+    text-align: center;
+}
+
+.footer p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/***********/
